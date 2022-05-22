@@ -4,26 +4,26 @@ html(lang="ko")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Noom
+        title 오픈 채팅방
         link(rel="stylesheet", href="https://unpkg.com/mvp.css")
     body 
         header 
-            h1 Noom
+            h1 오픈 채팅방
         main
             div#welcome
                 form
-                    input(placeholder="room name", required, type="text")
-                    button Enter Room
-                h4 Open Rooms:
+                    input(placeholder="방 이름을 입력하세요.", required, type="text")
+                    button 입장
+                h4 열려있는 방:
                 ul
             div#room
                 h3
                 ul 
                 form#name
-                    input(placeholder="nickname", required, type="text")
-                    button Save
+                    input(placeholder="이름을 입력하세요.", required, type="text")
+                    button 저장
                 form#msg
-                    input(placeholder="message", required, type="text")
-                    button Send
+                    input(placeholder="메시지를 입력하세요.", required, type="text")
+                    button 보내기
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js")
